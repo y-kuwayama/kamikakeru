@@ -101,15 +101,15 @@ $(function () {
 
 
 
-$(function() {
-    var bgsc1 = 0;
-    var bgsc2 = 0;
-setInterval(function(){
-    bgsc1+= 0.1;//マイナスは左に、プラスは右に移動します。この場合だと-1なので左に1pxづつ移動します。右に移動させる場合は1に変えます。
-    bgsc2+= 0;//マイナスは上に、プラスは下に移動。このサンプルは0にしてあるので上下には移動しません。
-    $(".skinBody").css("background-position", bgsc1 + "px " + bgsc2 + "px");
-});
-});
+// $(function() {
+//     var bgsc1 = 0;
+//     var bgsc2 = 0;
+// setInterval(function(){
+//     bgsc1+= 0.1;//マイナスは左に、プラスは右に移動します。この場合だと-1なので左に1pxづつ移動します。右に移動させる場合は1に変えます。
+//     bgsc2+= 0;//マイナスは上に、プラスは下に移動。このサンプルは0にしてあるので上下には移動しません。
+//     $(".skinBody").css("background-position", bgsc1 + "px " + bgsc2 + "px");
+// });
+// });
 
 
 
@@ -143,5 +143,16 @@ $(function() {
       asNavFor: '.slides',
     });
   });
+
+function initialize() {
+  var latlng = new google.maps.LatLng(21.57475938,128.03335625);
+  var myOptions = {
+    zoom: 3, /*拡大比率*/
+    center: latlng, /*表示枠内の中心点*/
+    mapTypeId: google.maps.MapTypeId.ROADMAP/*表示タイプの指定*/
+  };
+
+  var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+}
 
 

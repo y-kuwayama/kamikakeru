@@ -14,133 +14,6 @@ clear: both;
 
 // // ======================= First =======================
 
-// #s01{
-//   background-image: url("/assets/top01.jpg");
-//   background-size:cover;
-//   position: relative;
-//   min-width: 642px;
-  // h1{margin: 0;position: absolute;left: 50px;top: 50px;padding: 0.25em 1em;border-top: solid 2px #fefefe;border-bottom: solid 2px #fefefe;color: #fefefe;font-weight: lighter;}
-  // h1:before, h1:after{content: '';position: absolute;top: -7px;width: 2px;height: -webkit-calc(100% + 14px);height: calc(100% + 14px);background-color: #fefefe;color: white;}
-  // h1:before {left: 7px;}
-  // h1:after {right: 7px;}
-// }
-
-// // -------nav------
-
-
-
-// // -------nav------
-
-
-
-
-// // ======================= Section02 =======================
-
-
-// #s02{
-//   margin-top: 1px;
-//   background-color: #1d1d1d;
-//   position: relative;
-//   img{display: block;margin: 0 auto;width: 100%;}
-// }
-
-// ======================= Section03 =======================
-
-.inviewfadeInUp {
-        opacity: 0;
-        transform: translate(0, 60px);
-        -webkit-transform: translate(0, 60px);
-        transition: 2.0s;
-    }
-
-    .inviewfadeIn {
-        opacity: 0;
-        transition: 2.0s;
-    }
-
-    .fadeIn {
-        opacity: 1.0;
-    }
-
-#s03{
-  width: 100%;
-  height: 1700px;
-  background-color: black;
-  margin-top: 1px;
-}
-
-.center{
-  width: 900px;
-  display: block;
-  margin: 0 auto;
-}
-
-// ----------------------------leftbox-------------------------------
-
-.leftbox{
-  padding-top: 250px;
-  float: left;
-  margin-right: 3px;
-}
-
-#left1{
-  height: 450px;
-}
-
-#leftbox2{
-  margin-top: 6px;
-}
-
-#left2{
-  img{width: 212px;height: 239px;float: left;margin-right: 3px;}
-}
-#left3{
-  img{width: 212px;height: 239px;float: left;margin-left: 3px;}
-}
-#left4{
-  height: 240px;
-  margin-top: 6px;
-}
-
-#left5{
-  margin-top: 6px;
-}
-
-
-// ----------------------------rightbox-------------------------------
-
-.rightbox{
-  padding-top: 100px;
-  float: left;
-  margin-left: 3px;
-}
-
-#right1{
-  height: 450px;
-}
-
-#rightbox2{
-  margin-top: 6px;
-}
-
-#right2{
-  img{width: 212px;height: 239px;float: left;margin-right: 3px;}
-}
-#right3{
-  img{width: 212px;height: 239px;float: left;margin-left: 3px;}
-}
-#right4{
-  height: 240px;
-  margin-top: 6px;
-}
-
-#right5{
-  margin-top: 6px;
-}
-
-
-// ==================================修正===============================
-
 #first{
   background-image: url("/assets/top01.jpg");
   background-position: center center;
@@ -150,12 +23,8 @@ clear: both;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  #try{position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);}
 
-#try{
-position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50%);
-}
-
-  // min-width: 642px;
   h1{vertical-align: middle; margin: 0;
     padding: 0.25em 1em;border-top: solid 2px #fefefe;border-bottom: solid 2px #fefefe;color: #fefefe;font-weight: lighter;}
   h1:before, h1:after{content: '';position: absolute;top: -7px;width: 2px;height: -webkit-calc(100% + 14px);height: calc(100% + 14px);background-color: #fefefe;color: white;}
@@ -190,15 +59,9 @@ position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50
     a {display: inline-block;transition: .3s;-webkit-transform: scale(1);transform: scale(1);}
     a:hover {-webkit-transform: scale(1.1);transform: scale(1.1);}
   }
-
-
-
 }
 
-
-
 // // ======================= Section02 =======================
-
 #second{
   img{width: 50%;height: 299px;background-size: cover;}
   height: 299px;
@@ -209,34 +72,15 @@ position: absolute;left: 50%;top: 50%;transform: translateY(-50%) translateX(-50
   h1:after {right: 7px;}
 }
 
-.massage2{
-  font-size: 6vw;
-  color: white;
-  position: absolute;
-  top:58%;
-  left:6%;
-}
+.massage2{font-size: 6vw;color: white;position: absolute;top:58%;left:6%;}
 
-.skinBody{
-  background: url("/assets/worldmap.jpg");
-  // background-image: url("/assets/worldmap.jpg");
-  // background-size: auto;
-  background-repeat: repeat-x;
-// background-position: 1000px 0px;  /* 左上から右に20px, 下に30px */
-}
+.skinBody{background: url("/assets/worldmap.jpg");background-repeat: repeat-x;}
 
 // ======================= Section03 =======================
 
 #display{
 outline: none;
-  img{
-  position: relative;
-  left:50px;
-  width: auto;
-  height: 500px;
-  margin-bottom: 5px;
-
-}
+img{position: relative;left:50px;width: auto;height: 500px;margin-bottom: 5px;}
 }
 
 .bg{
@@ -244,35 +88,90 @@ z-index: 0;
 position: absolute;
 right: 20px;
 top:1px;
-img{
-  width: 60%;
-height:347px;
-}
+img{width: 60%;height:347px;}
 }
 
 
 .slides{
   padding-top: 50px;
-  img{
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
+  img{background-position: center center;background-repeat: no-repeat;}
 }
 
-.slick-slide .slick-active{
-  outline: none;
-}
-
-
+.slick-slide .slick-active{outline: none;}
 
 .slides-nav{
   padding-top: 50px;
   padding-bottom: 50px;
-  img{
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: auto;
-    object-fit: cover;
+  img{background-position: center center;background-repeat: no-repeat;width: 150px;height: auto;object-fit: cover;}
+}
+
+
+// ======================= Section03 =======================
+
+.inviewfadeInUp {opacity: 0;transform: translate(0, 60px);-webkit-transform: translate(0, 60px);transition: 2.0s;}
+.inviewfadeIn {opacity: 0;transition: 2.0s;}
+.fadeIn {opacity: 1.0;}
+#s03{width: 100%;height: 1700px;background-color: black;margin-top: 1px;}
+.center{width: 900px;display: block;margin: 0 auto;}
+
+// ----leftbox-----
+
+.leftbox{padding-top: 250px;float: left;margin-right: 3px;}
+#left1{height: 450px;}
+#leftbox2{margin-top: 6px;}
+#left2{img{width: 212px;height: 239px;float: left;margin-right: 3px;}}
+#left3{img{width: 212px;height: 239px;float: left;margin-left: 3px;}}
+#left4{height: 240px;margin-top: 6px;}
+#left5{margin-top: 6px;}
+
+// -----rightbox-------
+
+.rightbox{padding-top: 100px;float:left;margin-left: 3px;}
+#right1{height: 450px;}
+#rightbox2{margin-top: 6px;}
+#right2{img{width: 212px;height: 239px;float: left;margin-right: 3px;}}
+#right3{img{width: 212px;height: 239px;float: left;margin-left: 3px;}}
+#right4{height: 240px;margin-top: 6px;}
+
+#right5{
+  margin-top: 6px;
+}
+
+// ======================= Section03 =======================
+
+
+#mapField {
+  width: 350px;
+  height: 350px;
+}
+
+.map{
+  padding: 50px;
+  margin: 0 auto;
+  #map_canvas{
+    margin: 0 auto;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
