@@ -56,8 +56,6 @@ clear: both;
     transform:translateX(-50%);
     margin-top:40px;
     width: 500px;
-    a {display: inline-block;transition: .3s;-webkit-transform: scale(1);transform: scale(1);}
-    a:hover {-webkit-transform: scale(1.1);transform: scale(1.1);}
   }
 }
 
@@ -141,19 +139,19 @@ img{width: 60%;height:347px;}
 
 
 #mapField {
-  width: 350px;
+  width: 100%;
   height: 350px;
 }
 
 .map{
-  padding: 50px;
+  padding: 2px 0px 2px;
   margin: 0 auto;
-  #map_canvas{
-    margin: 0 auto;
-  }
 }
 
-
+#map_canvas{
+    margin: 0 auto;
+    width: 100%;
+  }
 
 
 
